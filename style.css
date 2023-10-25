@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.keyboard {
+    display: inline-block;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3d68dd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style individual keys as needed */
+.key:hover {
+    background-color: #999;
+    color: white;
+}
+
+/* Add more CSS to style the keys and layout as desired */
+.key, .backspace {
+    font-size: 10px;
+}
